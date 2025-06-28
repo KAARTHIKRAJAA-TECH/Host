@@ -1,0 +1,121 @@
+I want to build a blockchain-based Copyright Prevention Social Media Platform.
+Please help me generate the base project structure according to the following idea and design:
+
+Project Idea:
+A decentralized platform where users can post content (images, videos, text, etc.). Each post will be registered on blockchain to prevent copyright violations. Users can control how their content is used (free, paid, restricted, or permission-based). Additionally, a certificate can be downloaded for each post with proof of ownership.
+Functional Requirements (Point by Point):
+
+User Registration and Login:
+
+Users must register using a unique email ID.
+
+Login page for existing users.
+
+Home Page (After Login):
+
+Users can view posts made by other users.
+
+Interface like Instagram / YouTube feed.
+
+Create Post and Profile Options:
+
+"Create Post" button.
+
+"Profile" button.
+
+Create Post Flow:
+
+User can select the type of post (image, video, text, etc.).
+
+Add a title/caption for the post.
+
+Set content usage rights:
+
+Free to use
+
+Paid access
+
+No usage allowed
+
+Request permission to use
+
+Option to allow or block downloads.
+
+Submit button to upload post.
+
+Post Upload Notification:
+
+System checks if the content is unique using hash comparison.
+
+Notify:
+
+Post uploaded successfully if unique.
+
+Duplicate detected if content already exists.
+
+Profile Page Features:
+
+Display user details (Email ID, number of posts).
+
+List all user posts like an Instagram grid.
+
+Each post has a three-dot menu:
+
+Option to download a Certificate of Ownership containing:
+
+Post Title
+
+Date and Time of Upload
+
+Owner Email ID
+
+Content Hash
+Technical Design:
+
+Frontend:
+
+ReactJS (or Next.js)
+
+TailwindCSS / Bootstrap for UI
+
+MetaMask integration for connecting wallets
+
+Backend and Blockchain:
+
+Smart Contracts using Solidity
+
+Hardhat / Truffle for development and deployment
+
+Store content metadata (hashes) on Ethereum testnet (Goerli or Mumbai)
+
+IPFS (InterPlanetary File System) for decentralized file storage
+
+Database (Optional):
+
+Firebase / MongoDB for storing additional user profile information (non-sensitive)
+
+Other Libraries:
+
+Ethers.js / Web3.js for frontend to blockchain communication
+
+IPFS HTTP Client for file uploads
+Expected Output:
+
+Starter folder structure
+
+Basic smart contract for content registration (with title, hash, owner, timestamp, and permissions)
+
+React frontend with:
+
+Login/Register page
+
+Home Feed page (view posts)
+
+Create Post page
+
+Profile page (view posts, download certificates)
+
+Example smart contract interaction from frontend (upload post, get post info)
+
+Please generate the starter project with basic sample codes, structure, and instructions.
+project name is content shield (give modern design like insta,youtube but not exactly look like this little different and unique)

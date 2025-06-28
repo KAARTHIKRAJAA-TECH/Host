@@ -1,0 +1,33 @@
+Create a fully functional copyright prevention social media platform called "Content Shield" using the MERN stack (MongoDB, Express, React, Node.js), but simulate the blockchain features locally.
+
+Requirements:
+
+1. No wallet integration — users should register and log in using just their email.
+2. After login, users land on a modern feed (like Instagram/YouTube) showing all public posts from other users.
+3. Each post should:
+   - Show title, owner, and content (image/video/text).
+   - Allow users (non-owners) to send a **license request**.
+   - Allow owners to view license requests and **approve or reject** them.
+   - Allow owners and approved users to **download the content**.
+4. Users should be able to:
+   - **Create a post**: upload image/video/text, add title/caption, choose license type (Free, Paid, Request Permission, No Use).
+   - **View their profile**: see their uploaded posts in a grid, and manage license requests.
+   - **Download a Certificate of Ownership** as PDF or HTML with:
+     - Post Title
+     - Owner Email
+     - Upload Timestamp
+     - Content Hash
+5. Simulate blockchain and IPFS behavior using:
+   - JSON files or MongoDB (if preferred).
+   - Use SHA256 hash to check content uniqueness.
+   - Save metadata like title, hash, timestamp, license type, and owner email.
+6. Use:
+   - React + TailwindCSS for the frontend UI (Instagram/YouTube inspired, but unique).
+   - Node.js + Express for the backend API.
+   - Multer for handling uploads.
+   - Local storage (lowdb or simple JSON) for data persistence.
+   - SHA256 hashing for content integrity.
+7. Run everything locally with `localhost:3000` (frontend) and `localhost:5000` (backend).
+8. Project should work after refresh — all user data, posts, and requests must persist.
+
+The entire project must be created as a single fullstack Replit project. Include clear folder structure, routing, API integration, and sample data. All features should be demo-ready, even if simulated. No blockchain node or wallet is required.
