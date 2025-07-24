@@ -1,6 +1,6 @@
 
 # Host
-Host our project
+Host our Project
 
 # Content Shield Platform
 
